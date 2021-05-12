@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="LA VUELTA AL MUNDO"
+        android:textSize="30dp"/>
+
+
+    <EditText
+        android:id="@+id/introPais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Introduce Nombre del país" />
+
+    <EditText
+        android:id="@+id/introExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/introPais"
+        android:hint="Describe tu experiencia" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/introExp"
+        android:text="guardar"
+        android:onClick="guardarDatos"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guardar"
+        android:src="@drawable/viajes"/>
+
+
+</RelativeLayout>

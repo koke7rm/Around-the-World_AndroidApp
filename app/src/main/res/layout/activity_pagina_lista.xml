@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".PaginaLista">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_purple"
+        android:text="LISTA DE EXPERIENCIAS POR EL MUNDO"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="Para borrar, mantener pulsada experiencia"/>
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="atrás"
+        android:onClick="atras"/>
+
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
